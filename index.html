@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Library | Search your desire book</title>
+  </head>
+  <body>
+      <!-- search box container -->
+      <div class="container">
+        <div class="d-flex mt-5">
+            <input type="text" class="form-control" placeholder="Search a book..." id="searchInput">
+            <input class="btn btn-primary" type="submit" onclick="getBooksFromApi(event)" value="Search">
+        </div>
+        <div class="form-text" id="helpInput"></div>
+      </div>
+      <!-- book display container -->
+      <div class="container">
+          <div class="row mt-5" id="bookDisplay">
+            <div class="col-4">
+                
+              </div>
+          </div>
+      </div>
+      <!-- custom javascript -->
+      <script src="./app.js"></script>
+  </body>
+</html>
