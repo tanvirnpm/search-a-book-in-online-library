@@ -5,6 +5,7 @@ const getElement = (id) => {
 // get book list from api after submit
 const getBooksFromApi = event => {
     event.preventDefault();
+    getElement('spiner').style.display = 'block';
     const searchText = getElement('searchInput').value;
     console.log(searchText);
     fetch(`https://openlibrary.org/search.json?q=${searchText}`)
@@ -43,5 +44,6 @@ const displayBooks = books => {
             </div>
         `;
         getElement('bookDisplay').appendChild(div);
-    })
+    });
+    getElement('spiner').style.display = 'none';
 }
