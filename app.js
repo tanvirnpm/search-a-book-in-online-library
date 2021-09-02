@@ -27,13 +27,16 @@ const displayBooks = books => {
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="img-fluid rounded-start" alt="...">
+                    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="img-fluid rounded-start" alt="Book Cover">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                    <h5 class="card-title">${book.title}</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Book Name: ${book.title}</h5>
+                    <h5 class="card-subtitle">Author: ${book.author_name}</h5>
+                    <p class="card-text">First Publish Year: ${book.first_publish_year}</p>
+                    <p class="card-text">Publish Date: ${book.publish_date}</p>
+                    <p class="card-text">Publish Year: ${book.publish_year}</p>
+                    <p class="card-text">Publisher: ${book.publisher}</p>
                     </div>
                 </div>
                 </div>
